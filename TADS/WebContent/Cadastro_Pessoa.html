@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entrega Online</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/sisexe.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body style="min-height: 100%">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="Home_Gerente.html">Sistema Tads<img src="pic/Tads.png" class="small-icone"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li><a href="Cadastro_Pessoa.html">Cadastro de Pessoa</a></li>
+            <li><a href="index.html">Sair</div></li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <a href="Home_Gerente.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        <h1>Cadastro de Pessoa</h1><br>
+        <form action="Novo_Usuario.html" method="post" enctype="multipart/form-data">
+           <div class="form-group">
+            <label>Função:</label>
+            <select class="form-control">
+              <option>Gerente</option>
+              <option>Entregador</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" class="form-control" name="cpf" required>
+          </div>
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="end">Endereço:</label>
+            <input type="text" class="form-control" name="end" required>
+          </div>
+          <div class="form-group">
+            <label for="cidade">Cidade:</label>
+            <input type="text" class="form-control" name="cidade" required>
+          </div>
+          <div class="form-group">
+            <label for="estado">Estado:</label>
+            <input type="text" class="form-control" name="estado" required>
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="text" class="form-control" name="telefone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" class="form-control" name="senha" id="pssw" minlength="6" required>
+          </div>
+          <div class="form-group" id="dng">
+              <label for="confirm">Confirme a Senha:</label>
+              <input type="password" class="form-control" name="confirm" minlength="6" onkeyup="verf(this.value)" required>
+          </div>
+          <label id="lbl">*As senhas não são iguais !!<br><br></label>
+          <br>
+          <button type="submit" class="btn btn-success">Criar</button>
+          
+        </form>
+        <br>
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+      <div id="ft">
+        TI162 Desenvolvimento de Aplicações Corporativas
+      </div>
+  </body>
+</html>

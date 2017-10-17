@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lavanderia Online</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style_func.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/sisexe.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body style="min-height: 100%">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="Home.html">Sistema LoL<img src="pic/LoL.png" class="small-icone"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Novo_Funcionario.html">Cadastro de Funcionário</a></li>
+            <li><a href="Nova_Roupa.html">Cadastro de Roupas</a></li>
+            <li><a href="Relatorio.html">Relatórios</a></li>
+            <li><a href="index.html">Sair</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-4">
+          <button class="btn btn-success">Pedidos de Hoje</button>
+          <button class="btn btn-warning">Não Resolvidos</button>
+        </div>
+        <div class="col-md-4">
+          <input type="text" name="consulta" class="place_holder" placeholder="Número do Pedido" style="width: 45%"><button class="btn btn-primary" onclick="buscaPedido()">Buscar Pedido<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+        <div class="col-md-4">
+          <form>            
+            <button type="submit" class="btn btn-azul-claro">Filtrar por Data</button>
+            <input type="text" name="de" class="place_holder" placeholder="De" style="width: 25%">
+            <input type="text" name="até" class="place_holder" placeholder="Até" style="width: 25%">
+          </form>
+        </div>
+        <div class="col-md-12">
+          <h1>Pedidos</h1>
+          <div class="panel panel-default">
+              <div class="panel-header">
+                <li class="list-group-item header-leg">Id Pedido</li>
+                <li class="list-group-item header-leg">Data</li>
+                <li class="list-group-item header-leg">Status</li>
+                <li class="list-group-item header-leg">Ações</li>
+              </div>
+              <div class="panel-body">
+                <ul class="list-group">
+                  
+                        <a href="Manter_Pedidos.html?acao=ver&id=1">
+                          	<li class="list-group-item item-pedido">Pedido 001</li>
+                            <li class="list-group-item item-pedido">01/01/2010</li>
+                          	<li class="list-group-item item-pedido">Aberto</li>
+                            <li class="list-group-item item-pedido">
+                              <a href="index.html" title="Cancelar Pedido"><i class="fa fa-trash-o icone_acao" aria-hidden="true" onclick="mudaStatus('excluir')"></i></a>
+                              <a href="index.html" title="Confirmar Lavagem"><i class="fa fa-pencil-square-o icone_acao" aria-hidden="true" onclick="mudaStatus('lavado')"></i></a>
+                              <a href="index.html" title="Confirmar Pagamento"><i class="fa fa-money icone_acao" aria-hidden="true" onclick="mudaStatus('confirma')"></i></a>
+                            </li>
+                        </a>
+
+
+                        <a href="Manter_Pedidos.html?acao=ver&id=1">
+                            <li class="list-group-item item-pedido">Pedido 002</li>
+                            <li class="list-group-item item-pedido">01/01/2010</li>
+                            <li class="list-group-item item-pedido">Concluído</li>
+                            <li class="list-group-item item-pedido">
+                              <a href="index.html" title="Cancelar Pedido"><i class="fa fa-trash-o icone_acao" aria-hidden="true" onclick="mudaStatus('excluir')"></i></a>
+                              <a href="index.html" title="Confirmar Lavagem"><i class="fa fa-pencil-square-o icone_acao" aria-hidden="true" onclick="mudaStatus('lavado')"></i></a>
+                              <a href="index.html" title="Confirmar Pagamento"><i class="fa fa-money icone_acao" aria-hidden="true" onclick="mudaStatus('confirma')"></i></a>
+                            </li>
+                        </a>
+
+
+                </ul>
+              </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+      <div id="ft">
+       TI162 Desenvolvimento de Aplicações Corporativas
+      </div>
+  </body>
+</html>

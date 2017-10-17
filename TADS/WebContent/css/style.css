@@ -1,0 +1,421 @@
+html { 
+  height: 100%
+}
+
+body {
+  position: relative;
+}
+
+textarea {
+  width: 100%;
+  height: 70px;
+  max-height: 100px;
+  max-width: 110%;
+}
+
+a {
+  color: #222;
+}
+
+.input-group-btn { 
+  padding: 0px;
+}
+
+.navbar-brand {
+    line-height: 2.1 !important;
+    padding: 8px 10px !important;
+}
+
+.row {
+  		width:100%;
+  		padding-top:90px;
+  		padding-bottom:90px;
+  		margin:0px;
+  		min-height:100%;
+  		position:relative;
+}
+
+
+.small-icone {
+    width: 11%;
+    float: left;
+    margin-right: 10px;
+    padding: 0;
+}
+
+#lgpg1 {
+  	text-align:center;
+  	padding-top:100px;
+}
+
+#sel {
+  	background-color:white;
+	  color:black;
+}
+
+.panel-body {
+  padding: 0 !important;
+}
+
+.list-group-item { 
+  font-size:18px;
+}
+
+.list-group > a {
+    color:black;
+    text-decoration:none
+  }
+
+label {
+  float: left;
+  margin-right: 5px;
+  font-weight: 100;
+}
+
+input[type="checkbox"]
+{
+  float: left;
+}
+
+.input-group {
+  width: 100%;
+  margin: 10px;
+}
+
+.input-group a {
+  float: right;
+}
+
+.label_data{
+  float: initial;
+}
+
+.input_data {
+  width: 8%;
+  border-radius: 2px;
+  border: 1px solid #b5b5b5;
+}
+
+#ft {
+  		position:absolute;
+  		bottom:0;
+  		width:100%;
+  		padding:30px;
+  		background-color:#222222;
+  		text-align:center;
+  		color:lightgrey;
+}
+
+.pull { 
+  overflow: auto;
+}
+
+.new-panel {
+      height:250px;
+      z-index:1;
+      overflow:auto;
+}
+
+#back {
+    padding-left:5px;
+    color:black;
+    text-decoration : underline;
+}
+
+#hdn, #lbl {
+  display: none;
+}
+
+.btn-azul-claro {
+    background-color: #0ec1b9;
+    color: #fff;
+}
+
+.vmr {
+  color: #ff0000;
+}
+
+.logo-login {
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+.entrar {
+  background-color: #222;
+  color: #fff;
+  width: 46%;
+  margin-left: 2%;
+}
+
+.novo-usuario {
+  background-color: #0078d7;
+  color: #fff;
+  width: 46%;
+  margin-right: 2%;
+}
+
+.entrar:hover, .novo-usuario:hover, .entrar:focus, .novo-usuario:focus {
+  color: #fff;
+}
+
+.modal-dialog {
+  margin: 15% auto;
+}
+
+.input-email {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    border-bottom: solid 1px #222;
+}
+
+.input-botao {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #222;
+    margin-left: 10px;
+    border: none;
+    color: #fff;
+}
+
+.header-leg {
+    float: left;
+    width: 25%;
+    text-align: center;
+    background-color: #eaeaea !important;
+}
+
+.header-leg-data {
+    float: left;
+    width: 15%;
+    text-align: center;
+    background-color: #eaeaea !important;
+}
+
+.header-leg-local {
+    float: left;
+    width: 35%;
+    text-align: center;
+    background-color: #eaeaea !important;
+}
+
+.header-leg-dest {
+    float: left;
+    width: 35%;
+    text-align: center;
+    background-color: #eaeaea !important;
+}
+
+.header-leg-acao {
+    float: left;
+    width: 15%;
+    text-align: center;
+    background-color: #eaeaea !important;
+}
+
+.date-leg {
+  font-size: 19px;
+  line-height: 1.42857143;
+  color: #333;
+  margin-left: 21%;
+  position: absolute;
+}
+
+.item-pedido {
+  width: 100%;
+  padding: 0 !important;
+  float: left;
+}
+
+.info_entrega-data {
+    width: 15%;
+    text-align: center;
+    position: relative;
+    float: left;
+    padding: 15px 0px;
+    margin: 0;
+    border-right: 1px solid #dddddd;
+}
+
+.info_entrega-local {
+    width: 35%;
+    text-align: center;
+    position: relative;
+    float: left;
+    padding: 15px 0px;
+    margin: 0;
+    border-right: 1px solid #dddddd;
+}
+
+.info_entrega-dest {
+    width: 35%;
+    text-align: center;
+    position: relative;
+    float: left;
+    padding: 15px 0px;
+    margin: 0;
+    border-right: 1px solid #dddddd;
+}
+
+.info_entrega-status {
+  width: 15%;
+  text-align: center;
+  position: relative;
+  float: left;
+  padding: 15px 0px;
+  margin: 0;
+}
+
+.fa-clipboard {
+    right: 5%;
+    font-size: 25px !important;
+    color: #337ab7;
+    position: absolute;
+}
+
+.fa-check {
+    color: #5cb85c;
+}
+
+.fa-close {
+  color: #f34528;
+}
+
+.fa-money {
+    font-size: 25px !important;
+    color: #508c50;
+}
+
+.fa-pencil-square-o {
+  font-size: 25px !important;
+  color: #f0ad4e;
+}
+
+.fa-trash-o {
+  font-size: 25px !important;
+  color: #f34528;
+}
+
+.fa-arrow-left {
+    font-size: 25px !important;
+    color: #222;
+}
+
+.icone-pedido{
+    right: 5%;
+    font-size: 25px !important;
+    position: absolute; 
+}
+
+.btn_acao {
+  width: 15%;
+  float: left;
+  margin: 10px 0;
+}
+
+.icone_acao {
+    width: 100%;
+    float: left;
+    position: inherit;
+    text-align: center;
+    font-size: 35px !important;
+}
+
+.icone_acao_2 {
+    width: 50%;
+    float: left;
+    position: inherit;
+    text-align: center;
+    font-size: 35px !important; 
+}
+
+.fa-arrow-right {
+  color: #5cb85c;
+}
+
+.fa-times {
+  color: #ff0000;
+}
+
+
+.fa-truck {
+  float: right;
+  margin-top: 14px;
+  font-size: 25px !important;
+  color: #f37c28;
+  width: 5%; 
+}
+
+.info_cliente {
+  width: 50%;
+  float: left;
+  font-size: 20px;
+}
+
+.titulo-h3 {
+  width: 100%;
+  float: left;
+}
+
+.roupa{
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 15px;
+    width: 90%;
+    float: left;
+    margin-right: 10px;
+    height: 150px;
+    overflow: auto;
+}
+
+.roupa-btn {
+      margin-top: 21px;
+}
+
+.roupa-ic {
+      color: #fff;
+    font-size: 17px;
+    margin: 0;
+    float: left;
+}
+
+.group-item-roupa {
+    list-style: none;
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.leg-item-roupa {
+    width: 25%;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.select-item {
+  width: 100%;
+  float: left;
+}
+
+.select-item:hover {
+  cursor: pointer;
+}
+
+.item-roupa {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.exemplo {
+  margin-left: 10px;
+  color: #a5a5a5 !important;
+  font-size: 12px;
+}
