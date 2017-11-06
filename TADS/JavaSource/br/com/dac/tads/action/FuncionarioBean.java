@@ -9,21 +9,40 @@ public class FuncionarioBean implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
+	private Integer matricula;
 	private String cpf;
 	private String tipo;
 	private String nome;
 	private String endereco;
 	private String telefone;
 	private String email;
+	private String senha;
 
-	public FuncionarioBean(String cpf, String tipo, String nome, String endereco, String telefone, String email) {
+	
+
+	public FuncionarioBean(Integer matricula, String cpf, String tipo, String nome, String endereco, String telefone,
+			String email, String senha) {
 		super();
+		this.matricula = matricula;
 		this.cpf = cpf;
 		this.tipo = tipo;
 		this.nome = nome;
 		this.endereco = endereco;
 		this.telefone = telefone;
 		this.email = email;
+		this.senha = senha;
+	}
+
+	public FuncionarioBean() {
+		super();
+	}
+
+	public Integer getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(Integer matricula) {
+		this.matricula = matricula;
 	}
 
 	public String getCpf() {
@@ -73,5 +92,15 @@ public class FuncionarioBean implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	
+	
 
 }

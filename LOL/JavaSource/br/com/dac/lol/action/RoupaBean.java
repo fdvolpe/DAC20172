@@ -24,6 +24,10 @@ public class RoupaBean implements Serializable {
 		this.funcionarioCriador = funcionarioCriador;
 	}
 
+	public RoupaBean() {
+		super();
+	}
+
 	public Integer getIdRoupa() {
 		return idRoupa;
 	}

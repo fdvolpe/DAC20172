@@ -9,20 +9,29 @@ public class FuncionarioBean extends Pessoa {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private String matricula;
+	private Integer matricula;
 	private Date dataNasc;
+	private String dataNascString;
 
-	public FuncionarioBean(String nome, String email, String senha, String matricula, Date dataNasc) {
+	public FuncionarioBean(String nome, String email, String senha, Integer matricula, Date dataNasc) {
 		super(nome, email, senha);
 		this.matricula = matricula;
 		this.dataNasc = dataNasc;
 	}
 
-	public String getMatricula() {
+	public FuncionarioBean(String nome, String email, String senha) {
+		super(nome, email, senha);
+	}
+	
+	public FuncionarioBean() {
+		
+	};
+
+	public Integer getMatricula() {
 		return matricula;
 	}
 
-	public void setMatricula(String matricula) {
+	public void setMatricula(Integer matricula) {
 		this.matricula = matricula;
 	}
 
@@ -32,6 +41,14 @@ public class FuncionarioBean extends Pessoa {
 
 	public void setDataNasc(Date dataNasc) {
 		this.dataNasc = dataNasc;
+	}
+
+	public String getDataNascString() {
+		return dataNascString;
+	}
+
+	public void setDataNascString(String dataNascString) {
+		this.dataNascString = dataNascString;
 	}
 
 }

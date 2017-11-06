@@ -20,6 +20,10 @@ public abstract class Pessoa implements Serializable {
 		this.senha = senha;
 	}
 
+	public Pessoa() {
+		super();
+	}
+
 	public String getNome() {
 		return nome;
 	}

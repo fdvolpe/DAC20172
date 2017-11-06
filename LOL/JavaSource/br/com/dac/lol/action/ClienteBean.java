@@ -7,6 +7,7 @@ public class ClienteBean extends Pessoa {
 	 */
 	private static final long serialVersionUID = 1L;
 
+	private Integer idCliente;
 	private String cpf;
 	private String sexo;
 	private String endereco;
@@ -19,6 +20,22 @@ public class ClienteBean extends Pessoa {
 		this.sexo = sexo;
 		this.endereco = endereco;
 		this.telefone = telefone;
+	}
+
+	public ClienteBean(String nome, String email, String senha) {
+		super(nome, email, senha);
+	}
+
+	public ClienteBean() {
+		
+	}
+
+	public Integer getIdCliente() {
+		return idCliente;
+	}
+
+	public void setIdCliente(Integer idCliente) {
+		this.idCliente = idCliente;
 	}
 
 	public String getCpf() {

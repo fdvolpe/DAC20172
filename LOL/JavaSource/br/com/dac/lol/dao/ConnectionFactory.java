@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class ConnectionFactory {
 
-	public Connection getConnection() throws SQLException, IOException {
+	public static Connection getConnection() throws SQLException, IOException {
 		try {
 
 			String url = "jdbc:mysql://localhost:3306/bd_lol";

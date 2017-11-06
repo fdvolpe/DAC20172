@@ -14,20 +14,24 @@ public class EntregaBean implements Serializable {
 	private Integer idPedido;
 	private String descricao;
 	private String endereco;
-	private Integer clienteId;
+	private String cliente;
 	private Date data;
 	private String status;
 
-	public EntregaBean(Integer idEntrega, Integer idPedido, String descricao, String endereco, Integer clienteId,
+	public EntregaBean(Integer idEntrega, Integer idPedido, String descricao, String endereco, String clienteId,
 			Date data, String status) {
 		super();
 		this.idEntrega = idEntrega;
 		this.idPedido = idPedido;
 		this.descricao = descricao;
 		this.endereco = endereco;
-		this.clienteId = clienteId;
+		this.cliente = clienteId;
 		this.data = data;
 		this.status = status;
+	}
+
+	public EntregaBean() {
+		super();
 	}
 
 	public Integer getIdEntrega() {
@@ -62,12 +66,12 @@ public class EntregaBean implements Serializable {
 		this.endereco = endereco;
 	}
 
-	public Integer getClienteId() {
-		return clienteId;
+	public String getCliente() {
+		return cliente;
 	}
 
-	public void setClienteId(Integer clienteId) {
-		this.clienteId = clienteId;
+	public void setCliente(String cliente) {
+		this.cliente = cliente;
 	}
 
 	public Date getData() {
