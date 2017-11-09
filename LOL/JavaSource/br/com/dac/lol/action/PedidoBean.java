@@ -18,9 +18,12 @@ public class PedidoBean implements Serializable {
 	private Integer prazoTotal;
 	private Double valorTotal;
 	private ArrayList<RoupaBean> roupas;
+	private ClienteBean clientePedido;
+	private FuncionarioBean funcionarioPedido;
 
 	public PedidoBean(Integer idPedido, String endereco, Date dataPedido, String status, Integer prazoTotal,
-			Double valorTotal, ArrayList<RoupaBean> roupas) {
+			Double valorTotal, ArrayList<RoupaBean> roupas, ClienteBean clientePedido,
+			FuncionarioBean funcionarioPedido) {
 		super();
 		this.idPedido = idPedido;
 		this.endereco = endereco;
@@ -29,6 +32,12 @@ public class PedidoBean implements Serializable {
 		this.prazoTotal = prazoTotal;
 		this.valorTotal = valorTotal;
 		this.roupas = roupas;
+		this.clientePedido = clientePedido;
+		this.funcionarioPedido = funcionarioPedido;
+	}
+
+	public PedidoBean() {
+		super();
 	}
 
 	public Integer getIdPedido() {
@@ -85,6 +94,22 @@ public class PedidoBean implements Serializable {
 
 	public void setRoupas(ArrayList<RoupaBean> roupas) {
 		this.roupas = roupas;
+	}
+
+	public ClienteBean getClientePedido() {
+		return clientePedido;
+	}
+
+	public void setClientePedido(ClienteBean clientePedido) {
+		this.clientePedido = clientePedido;
+	}
+
+	public FuncionarioBean getFuncionarioPedido() {
+		return funcionarioPedido;
+	}
+
+	public void setFuncionarioPedido(FuncionarioBean funcionarioPedido) {
+		this.funcionarioPedido = funcionarioPedido;
 	}
 
 }
